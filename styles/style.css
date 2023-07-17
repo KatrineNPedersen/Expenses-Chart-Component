@@ -1,0 +1,292 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  background-color: hsl(27, 66%, 92%);
+  color: hsl(28, 10%, 53%);
+}
+body main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+  width: 90%;
+  max-height: 665px;
+  max-width: 562px;
+}
+body main .balance-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 20%;
+  width: 100%;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 10px;
+}
+body main .balance-container .balance-overview {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: 1fr;
+  color: hsl(27, 66%, 92%);
+  height: 100%;
+  width: 90%;
+}
+body main .balance-container .balance-overview .current-balance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body main .balance-container .balance-overview .current-balance h1 {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 400;
+}
+body main .balance-container .balance-overview .current-balance p {
+  margin: 0px;
+  font-size: 25px;
+  font-weight: 700;
+}
+body main .balance-container .balance-overview .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
+}
+body main .spending {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  height: 77%;
+  width: 100%;
+}
+body main .spending .breakdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 90%;
+}
+body main .spending .breakdown h2 {
+  font-size: 25px;
+  width: 100%;
+  text-align: left;
+  color: hsl(25, 47%, 15%);
+  margin-bottom: 0;
+}
+body main .spending .breakdown .spending-daily {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-rows: 1fr;
+  grid-column-gap: 4%;
+  width: 100%;
+  height: 85%;
+  font-size: 13px;
+}
+body main .spending .breakdown .spending-daily .day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+body main .spending .breakdown .spending-daily .day .spend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 11%;
+  width: 135%;
+  background-color: black;
+  border-radius: 3px;
+}
+body main .spending .breakdown .spending-daily .day .spend p {
+  color: white;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+}
+body main .spending .breakdown .spending-daily .day .hidden {
+  display: none;
+}
+body main .spending .breakdown .spending-daily .day .bar {
+  background-color: hsl(10, 79%, 65%);
+  margin-top: 10%;
+  border-radius: 3px;
+  height: 50%;
+  width: 100%;
+}
+body main .spending .breakdown .spending-daily .day .bar:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+body main .spending .breakdown .spending-daily .day .bar-mon {
+  height: 20.4294106579%;
+}
+body main .spending .breakdown .spending-daily .day .bar-tue {
+  height: 40.8705287145%;
+}
+body main .spending .breakdown .spending-daily .day .bar-wed {
+  height: 61.2999393724%;
+}
+body main .spending .breakdown .spending-daily .day .bar-thu {
+  height: 36.3748876299%;
+}
+body main .spending .breakdown .spending-daily .day .bar-fri {
+  height: 27.3836054607%;
+}
+body main .spending .breakdown .spending-daily .day .bar-sat {
+  height: 50.6696213911%;
+}
+body main .spending .breakdown .spending-daily .day .bar-sun {
+  height: 29.8304517802%;
+}
+body main .spending hr {
+  border: none;
+  border-top: 1px solid hsl(28, 10%, 53%);
+  opacity: 50%;
+  width: 90%;
+}
+body main .spending .total {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: 1fr;
+  height: 35%;
+  width: 90%;
+}
+body main .spending .total .this-month {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+body main .spending .total .this-month h3 {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+}
+body main .spending .total .this-month p {
+  font-size: 30px;
+  font-weight: 700;
+  color: hsl(25, 47%, 15%);
+  margin: 0;
+}
+body main .spending .total .last-month {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+}
+body main .spending .total .last-month h3 {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+}
+body main .spending .total .last-month p {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+  color: hsl(25, 47%, 15%);
+}
+body footer {
+  position: absolute;
+  bottom: 10px;
+}
+body footer .attribution {
+  font-size: 10px;
+  text-align: center;
+}
+body footer .attribution a {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  color: hsl(25, 47%, 15%);
+  text-decoration: none;
+}
+body footer .attribution a:hover {
+  color: hsl(10, 79%, 65%);
+}
+
+.current-day {
+  background-color: hsl(186, 34%, 60%);
+}
+
+@media screen and (min-width: 1200px) {
+  body main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65%;
+    width: 39%;
+    max-height: 665px;
+    max-width: 562px;
+  }
+  body main .balance-container {
+    border-radius: 20px;
+  }
+  body main .balance-container .balance-overview .current-balance h1 {
+    font-size: 20px;
+  }
+  body main .balance-container .balance-overview .current-balance p {
+    margin-top: 7px;
+    font-size: 30px;
+  }
+  body main .spending {
+    border-radius: 20px;
+    height: 77%;
+  }
+  body main .spending .breakdown h2 {
+    font-size: 33px;
+    margin-bottom: 0;
+  }
+  body main .spending .breakdown .spending-daily {
+    font-size: 15px;
+  }
+  body main .spending .breakdown .spending-daily .day .spend {
+    height: 14%;
+    width: 135%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  body main .spending .breakdown .spending-daily .day .spend p {
+    font-size: 17px;
+  }
+  body main .spending .breakdown .spending-daily .day .bar {
+    border-radius: 5px;
+  }
+  body main .spending .breakdown hr {
+    padding-top: 10px;
+  }
+  body main .spending .total {
+    height: 40%;
+  }
+  body main .spending .total .this-month h3 {
+    font-size: 17px;
+  }
+  body main .spending .total .this-month p {
+    font-size: 45px;
+  }
+  body main .spending .total .last-month h3 {
+    font-size: 18px;
+  }
+  body main .spending .total .last-month p {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=style.css.map */
